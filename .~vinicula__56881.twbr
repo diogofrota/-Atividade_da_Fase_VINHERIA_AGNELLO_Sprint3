@@ -1,0 +1,1343 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (base_vendas_vinheria)' inline='true' name='federated.0q8zq480cks57f168ejfd0qa2mvr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='base_vendas_vinheria' name='excel-direct.0ookoqx038hb6r102332f0cr8fal'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/diogofrota/Downloads/Vinheria_Agnello_Projeto/base_vendas_vinheria.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ookoqx038hb6r102332f0cr8fal' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P501:no:A1:P501:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID_Venda' ordinal='0' />
+            <column datatype='string' name='Data_Venda' ordinal='1' />
+            <column datatype='string' name='Produto' ordinal='2' />
+            <column datatype='string' name='Categoria' ordinal='3' />
+            <column datatype='integer' name='Preco' ordinal='4' />
+            <column datatype='integer' name='Quantidade' ordinal='5' />
+            <column datatype='string' name='Canal_Venda' ordinal='6' />
+            <column datatype='string' name='Regiao' ordinal='7' />
+            <column datatype='string' name='Tipo_Cliente' ordinal='8' />
+            <column datatype='integer' name='Desconto' ordinal='9' />
+            <column datatype='integer' name='Avaliacao_Cliente' ordinal='10' />
+            <column datatype='integer' name='Tempo_Entrega_Dias' ordinal='11' />
+            <column datatype='string' name='Forma_Pagamento' ordinal='12' />
+            <column datatype='string' name='Campanha_Marketing' ordinal='13' />
+            <column datatype='real' name='Custo_Frete' ordinal='14' />
+            <column datatype='string' name='Venda_Sucesso' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P501:no:A1:P501:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_Venda</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_Venda]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ID_Venda</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Venda</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Data_Venda]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Data_Venda</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Produto</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Produto]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Produto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categoria</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categoria]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Categoria</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Preco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Preco]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Preco</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantidade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantidade]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Quantidade</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Canal_Venda</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Canal_Venda]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Canal_Venda</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regiao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regiao]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Regiao</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo_Cliente</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tipo_Cliente]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Tipo_Cliente</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Desconto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Desconto]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Desconto</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avaliacao_Cliente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avaliacao_Cliente]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Avaliacao_Cliente</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tempo_Entrega_Dias</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tempo_Entrega_Dias]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Tempo_Entrega_Dias</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forma_Pagamento</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Forma_Pagamento]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Forma_Pagamento</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Campanha_Marketing</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Campanha_Marketing]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Campanha_Marketing</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Custo_Frete</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Custo_Frete]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Custo_Frete</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venda_Sucesso</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Venda_Sucesso]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Venda_Sucesso</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Avaliacao Cliente (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Avaliacao_Cliente]' peg='0' size='0.865' />
+      </column>
+      <column caption='Avaliacao Cliente' datatype='integer' name='[Avaliacao_Cliente]' role='measure' type='quantitative' />
+      <column caption='Campanha Marketing' datatype='string' name='[Campanha_Marketing]' role='dimension' type='nominal' />
+      <column caption='Canal Venda' datatype='string' name='[Canal_Venda]' role='dimension' type='nominal' />
+      <column caption='Custo Frete' datatype='real' name='[Custo_Frete]' role='measure' type='quantitative' />
+      <column caption='Data Venda' datatype='string' name='[Data_Venda]' role='dimension' type='nominal' />
+      <column caption='Forma Pagamento' datatype='string' name='[Forma_Pagamento]' role='dimension' type='nominal' />
+      <column caption='ID Venda' datatype='integer' name='[ID_Venda]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Preco]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Quantidade]' role='measure' type='quantitative' />
+      <column caption='Tempo Entrega Dias' datatype='integer' name='[Tempo_Entrega_Dias]' role='measure' type='quantitative' />
+      <column caption='Tipo Cliente' datatype='string' name='[Tipo_Cliente]' role='dimension' type='nominal' />
+      <column caption='Venda Sucesso' datatype='string' name='[Venda_Sucesso]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_76C091E3A0B1448583B257DD678382D4]' role='measure' type='quantitative' />
+      <column-instance column='[Avaliacao_Cliente]' derivation='Sum' name='[sum:Avaliacao_Cliente:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Custo_Frete]' derivation='Sum' name='[sum:Custo_Frete:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Preco]' derivation='Sum' name='[sum:Preco:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Quantidade]' derivation='Sum' name='[sum:Quantidade:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='pt_BR' class='hyper' dbname='Data/Fontes de dados/Sheet1 (base_vendas_vinheria).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/12/2026 07:14:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Sheet1 (base_vendas_vinheria)' increment-value='%null%' refresh-type='create' rows-inserted='500' timestamp-start='2026-05-12 19:14:51.659' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID_Venda</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID_Venda]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID_Venda</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>500</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Data_Venda</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Data_Venda]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Data_Venda</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>321</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Produto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Produto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Produto</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categoria</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categoria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categoria</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Preco</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Preco]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Preco</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantidade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantidade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantidade</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Canal_Venda</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Canal_Venda]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Canal_Venda</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Regiao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Regiao]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Regiao</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tipo_Cliente</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tipo_Cliente]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tipo_Cliente</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Desconto</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Desconto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Desconto</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avaliacao_Cliente</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Avaliacao_Cliente]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avaliacao_Cliente</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tempo_Entrega_Dias</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tempo_Entrega_Dias]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tempo_Entrega_Dias</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Forma_Pagamento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Forma_Pagamento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Forma_Pagamento</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Campanha_Marketing</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Campanha_Marketing]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Campanha_Marketing</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Custo_Frete</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Custo_Frete]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Custo_Frete</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Venda_Sucesso</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Venda_Sucesso]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Venda_Sucesso</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Sheet1_76C091E3A0B1448583B257DD678382D4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Avaliacao_Cliente:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Quantidade:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Preco:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Custo_Frete:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_76C091E3A0B1448583B257DD678382D4'>
+            <properties context=''>
+              <relation connection='excel-direct.0ookoqx038hb6r102332f0cr8fal' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:P501:no:A1:P501:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='ID_Venda' ordinal='0' />
+                  <column datatype='string' name='Data_Venda' ordinal='1' />
+                  <column datatype='string' name='Produto' ordinal='2' />
+                  <column datatype='string' name='Categoria' ordinal='3' />
+                  <column datatype='integer' name='Preco' ordinal='4' />
+                  <column datatype='integer' name='Quantidade' ordinal='5' />
+                  <column datatype='string' name='Canal_Venda' ordinal='6' />
+                  <column datatype='string' name='Regiao' ordinal='7' />
+                  <column datatype='string' name='Tipo_Cliente' ordinal='8' />
+                  <column datatype='integer' name='Desconto' ordinal='9' />
+                  <column datatype='integer' name='Avaliacao_Cliente' ordinal='10' />
+                  <column datatype='integer' name='Tempo_Entrega_Dias' ordinal='11' />
+                  <column datatype='string' name='Forma_Pagamento' ordinal='12' />
+                  <column datatype='string' name='Campanha_Marketing' ordinal='13' />
+                  <column datatype='real' name='Custo_Frete' ordinal='14' />
+                  <column datatype='string' name='Venda_Sucesso' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='região'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (base_vendas_vinheria)' name='federated.0q8zq480cks57f168ejfd0qa2mvr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8zq480cks57f168ejfd0qa2mvr'>
+            <column datatype='integer' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Regiao]' role='dimension' type='nominal' />
+            <column-instance column='[Regiao]' derivation='None' name='[none:Regiao:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Preco]' derivation='Sum' name='[sum:Preco:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Preco:qk]' />
+              <text column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Regiao:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9900A6E9-7217-4907-B53A-4883247FEE21}' />
+    </worksheet>
+    <worksheet name='tipo de cliente'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (base_vendas_vinheria)' name='federated.0q8zq480cks57f168ejfd0qa2mvr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8zq480cks57f168ejfd0qa2mvr'>
+            <column aggregation='None' datatype='integer' name='[Avaliacao Cliente (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Avaliacao_Cliente]' peg='0' size='0.865' />
+            </column>
+            <column caption='Avaliacao Cliente' datatype='integer' name='[Avaliacao_Cliente]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantidade]' role='measure' type='quantitative' />
+            <column caption='Tipo Cliente' datatype='string' name='[Tipo_Cliente]' role='dimension' type='nominal' />
+            <column-instance column='[Avaliacao Cliente (compartimento)]' derivation='None' name='[none:Avaliacao Cliente (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tipo_Cliente]' derivation='None' name='[none:Tipo_Cliente:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Preco]' derivation='Sum' name='[sum:Preco:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quantidade]' derivation='Sum' name='[sum:Quantidade:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.tableau.extension.radial' extension-url='https://tableau-extensions.tableauusercontent.com/radial/radial.html' extension-version='1.0.0' instance-id='259CAC98115A476C9C906173FC41BFB4'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{B635FCB9-B872-4ADB-B7AA-2A41C249B933}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Avaliacao Cliente (compartimento):qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{7C40E070-5D4F-49F5-817A-E31F61220FBC}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Preco:qk]' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{286E4B20-2825-4292-9429-143F34EDFAD6}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Tipo_Cliente:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{286E4B20-2825-4292-9429-143F34EDFAD6}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Tipo_Cliente:nk]' custom-type-name='level' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3A539EBB-6E47-4BD6-93D5-DE86BFE6B040}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Quantidade:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{3A539EBB-6E47-4BD6-93D5-DE86BFE6B040}' column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Quantidade:qk]' custom-type-name='angle' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C1B83CDC-6932-4405-89F0-1D9A91493D1D}' />
+    </worksheet>
+    <worksheet name='venda e Avaliação'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (base_vendas_vinheria)' name='federated.0q8zq480cks57f168ejfd0qa2mvr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8zq480cks57f168ejfd0qa2mvr'>
+            <column caption='Avaliacao Cliente' datatype='integer' name='[Avaliacao_Cliente]' role='measure' type='quantitative' />
+            <column caption='Campanha Marketing' datatype='string' name='[Campanha_Marketing]' role='dimension' type='nominal' />
+            <column caption='Canal Venda' datatype='string' name='[Canal_Venda]' role='dimension' type='nominal' />
+            <column-instance column='[Campanha_Marketing]' derivation='None' name='[none:Campanha_Marketing:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Canal_Venda]' derivation='None' name='[none:Canal_Venda:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avaliacao_Cliente]' derivation='Sum' name='[sum:Avaliacao_Cliente:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Campanha_Marketing:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Avaliacao_Cliente:qk]</rows>
+        <cols>[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]</cols>
+      </table>
+      <simple-id uuid='{F6FD4012-01C0-4F1B-8D1E-BF9E0C851326}' />
+    </worksheet>
+    <worksheet name='venda por plataforma'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (base_vendas_vinheria)' name='federated.0q8zq480cks57f168ejfd0qa2mvr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q8zq480cks57f168ejfd0qa2mvr'>
+            <column caption='Canal Venda' datatype='string' name='[Canal_Venda]' role='dimension' type='nominal' />
+            <column caption='Custo Frete' datatype='real' name='[Custo_Frete]' role='measure' type='quantitative' />
+            <column caption='Forma Pagamento' datatype='string' name='[Forma_Pagamento]' role='dimension' type='nominal' />
+            <column-instance column='[Canal_Venda]' derivation='None' name='[none:Canal_Venda:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forma_Pagamento]' derivation='None' name='[none:Forma_Pagamento:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Custo_Frete]' derivation='Sum' name='[sum:Custo_Frete:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[sum:Custo_Frete:qk]' />
+              <text column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]' />
+              <text column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Forma_Pagamento:nk]' />
+              <color column='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{61AAA4FA-3834-407D-B1B3-733741E6D280}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='tipo de cliente' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='5' name='região' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='6' name='venda por plataforma' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' name='venda e Avaliação' w='41200' x='42000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='13250' id='10' name='venda por plataforma' pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8250' id='12' name='venda e Avaliação' pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Campanha_Marketing:nk]' type-v2='color' w='16000' x='83200' y='14250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='70500' id='15' type-v2='text' w='16000' x='83200' y='22500'>
+                <formatted-text>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>📊 Vendas por Plataforma</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O canal </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Site</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> teve destaque nas vendas com pagamento via cartão e Pix.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>WhatsApp</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> também apresentou boa participação.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>🌎 Região</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Sudeste</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> concentrou o maior volume de vendas, seguido pelo Sul e Nordeste.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>👥 Tipo de Cliente</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Os clientes </run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>recorrentes</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> representam boa parte das vendas, mostrando fidelização.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>⭐ Avaliação</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>As avaliações foram positivas, indicando boa experiência dos clientes nos canais de venda.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='6' is-fixed='true' name='venda por plataforma' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13250' id='10' name='venda por plataforma' pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='região' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='70500' id='15' type-v2='text' w='16000' x='83200' y='22500'>
+                  <formatted-text>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>📊 Vendas por Plataforma</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O canal </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Site</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> teve destaque nas vendas com pagamento via cartão e Pix.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>WhatsApp</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> também apresentou boa participação.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>🌎 Região</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>O </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Sudeste</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> concentrou o maior volume de vendas, seguido pelo Sul e Nordeste.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>👥 Tipo de Cliente</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Os clientes </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>recorrentes</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'> representam boa parte das vendas, mostrando fidelização.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>⭐ Avaliação</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>As avaliações foram positivas, indicando boa experiência dos clientes nos canais de venda.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='tipo de cliente' w='41200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='venda e Avaliação' w='41200' x='42000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='12' name='venda e Avaliação' pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Campanha_Marketing:nk]' type-v2='color' w='16000' x='83200' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B7A0EFFE-97B8-4D59-89B9-F066AF18A7E0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='tipo de cliente'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C4B79142-C6D1-4A92-BACC-BFEAD5A60B04}' />
+    </window>
+    <window class='worksheet' name='região'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{1D20CB6A-684D-40FE-8F1F-1AC3490EC29A}' />
+    </window>
+    <window class='worksheet' name='venda por plataforma'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Canal_Venda:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B4E80F8C-719A-4E40-B3BE-086454C487F5}' />
+    </window>
+    <window class='worksheet' name='venda e Avaliação'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0q8zq480cks57f168ejfd0qa2mvr].[none:Campanha_Marketing:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8ED94120-7FE3-4E5E-8385-E9C61AEFD961}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='região'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='tipo de cliente' />
+        <viewpoint name='venda e Avaliação'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='venda por plataforma'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{147F6E31-2791-46E9-AD9E-D61A5D75DDDC}' />
+    </window>
+  </windows>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.radial'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A radial chart displays data in a circular format in which the total of all segment values add up to 100%, representing the whole. This visualization type creates donut charts, sunbursts, and fan charts, which are powerful means to summarize simple part-to-whole insights at a high level.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/radial/radial.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-encoding'>Ring</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level-radial' />
+            <tooltip resource-id='level-tooltip'>Radial Ring - Drag up to five dimensions here.</tooltip>
+          </encoding>
+          <encoding id='angle'>
+            <display-name resource-id='angle-encoding'>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='wedge' />
+            <tooltip resource-id='angle-tooltip'>Segment Angle - Drag a measure here.</tooltip>
+          </encoding>
+          <encoding id='center'>
+            <display-name resource-id='center-encoding'>Center</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='exclamation' />
+            <tooltip resource-id='center-tooltip'>Center Label - Drag a measure here</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='angle-encoding'>
+            <text locale='de_DE'>Winkel</text>
+            <text locale='en_GB'>Angle</text>
+            <text locale='en_US'>Angle</text>
+            <text locale='es_ES'>Ángulo</text>
+            <text locale='fr_CA'>Angle</text>
+            <text locale='fr_FR'>Angle</text>
+            <text locale='it_IT'>Angolo</text>
+            <text locale='ja_JP'>角度</text>
+            <text locale='ko_KR'>각도</text>
+            <text locale='nl_NL'>Hoek</text>
+            <text locale='pt_BR'>Ângulo</text>
+            <text locale='sv_SE'>Vinkel</text>
+            <text locale='th_TH'>มุม</text>
+            <text locale='zh_CN'>角度</text>
+            <text locale='zh_TW'>角度</text>
+          </resource>
+          <resource id='angle-tooltip'>
+            <text locale='de_DE'>Segmentwinkel - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Segment Angle - Drag a measure here.</text>
+            <text locale='en_US'>Segment Angle - Drag a measure here.</text>
+            <text locale='es_ES'>Ángulo del segmento - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Angolo del segmento - Trascina la misura qui.</text>
+            <text locale='ja_JP'>セグメントの角度 - メジャーを使用.</text>
+            <text locale='ko_KR'>세그먼트 각도 - 측정값 사용.</text>
+            <text locale='nl_NL'>Segmenthoek - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Ângulo do segmento - Arraste a medida aqui.</text>
+            <text locale='sv_SE'>Segmentvinkel - Dra mått hit.</text>
+            <text locale='th_TH'>มุมของส่วน - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>分段角度 - 使用度量.</text>
+            <text locale='zh_TW'>分段角度 - 使用測量值.</text>
+          </resource>
+          <resource id='center-encoding'>
+            <text locale='de_DE'>Zentrum</text>
+            <text locale='en_GB'>Centre</text>
+            <text locale='en_US'>Center</text>
+            <text locale='es_ES'>Centro</text>
+            <text locale='fr_CA'>Centre</text>
+            <text locale='fr_FR'>Centre</text>
+            <text locale='it_IT'>Centro</text>
+            <text locale='ja_JP'>中心</text>
+            <text locale='ko_KR'>중심</text>
+            <text locale='nl_NL'>Centrum</text>
+            <text locale='pt_BR'>Centro</text>
+            <text locale='sv_SE'>Centrum</text>
+            <text locale='th_TH'>ศูนย์กลาง</text>
+            <text locale='zh_CN'>中心</text>
+            <text locale='zh_TW'>中心</text>
+          </resource>
+          <resource id='center-tooltip'>
+            <text locale='de_DE'>Text zentrieren - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Centre Label - Drag a measure here.</text>
+            <text locale='en_US'>Center Label - Drag a measure here.</text>
+            <text locale='es_ES'>Texto central - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Testo centrale - Trascina la misura qui.</text>
+            <text locale='ja_JP'>中央のテキスト - メジャーを使用.</text>
+            <text locale='ko_KR'>중앙 텍스트 - 측정값 사용.</text>
+            <text locale='nl_NL'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Texto central - Arraste a medida aqui</text>
+            <text locale='sv_SE'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='th_TH'>ข้อความตรงกลาง - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>中心文字 - 使用度量.</text>
+            <text locale='zh_TW'>中心文字 - 使用測量值.</text>
+          </resource>
+          <resource id='level-encoding'>
+            <text locale='de_DE'>Hierarchieebene</text>
+            <text locale='en_GB'>Ring</text>
+            <text locale='en_US'>Ring</text>
+            <text locale='es_ES'>Anillo</text>
+            <text locale='fr_CA'>Anneau</text>
+            <text locale='fr_FR'>Anneau</text>
+            <text locale='it_IT'>Anello</text>
+            <text locale='ja_JP'>階層レベル</text>
+            <text locale='ko_KR'>원</text>
+            <text locale='nl_NL'>Ring</text>
+            <text locale='pt_BR'>Anel</text>
+            <text locale='sv_SE'>nivå</text>
+            <text locale='th_TH'>วงแหวน</text>
+            <text locale='zh_CN'>环</text>
+            <text locale='zh_TW'>環</text>
+          </resource>
+          <resource id='level-tooltip'>
+            <text locale='de_DE'>Hierarchieebene - Ziehen Sie hier bis zu fünf Dimensionen.</text>
+            <text locale='en_GB'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='en_US'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='es_ES'>Anillo - Arrastre aquí hasta cinco dimensiones.</text>
+            <text locale='fr_CA'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='fr_FR'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='it_IT'>Anello - Trascina qui fino a cinque dimensioni.</text>
+            <text locale='ja_JP'>階層レベル - 最大5つのディメンション.</text>
+            <text locale='ko_KR'>원 - 최대 5개의 디멘션.</text>
+            <text locale='nl_NL'>Ring - Sleep hier maximaal vijf dimensies naartoe.</text>
+            <text locale='pt_BR'>Anel - Arraste até cinco dimensões aqui.</text>
+            <text locale='sv_SE'>nivå - Dra upp till fem dimensioner här.</text>
+            <text locale='th_TH'>วงแหวน - &#9;มิติสูงสุดห้ามิติ.</text>
+            <text locale='zh_CN'>环 - 最多五个维度.</text>
+            <text locale='zh_TW'>環 - 最多五個維度.</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Radial</text>
+            <text locale='ja_JP'>サンバーストチャート</text>
+            <text locale='zh_CN'>旭日圖</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='tipo de cliente' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
